@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C3670D62A83AC8000ACFA11 /* FastLaneSetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3670D52A83AC8000ACFA11 /* FastLaneSetupTests.swift */; };
 		C731DF122A80FD94003A976A /* FastLaneSetupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731DF112A80FD94003A976A /* FastLaneSetupApp.swift */; };
 		C731DF142A80FD94003A976A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731DF132A80FD94003A976A /* ContentView.swift */; };
 		C731DF162A80FD96003A976A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C731DF152A80FD96003A976A /* Assets.xcassets */; };
 		C731DF192A80FD96003A976A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C731DF182A80FD96003A976A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7C3670D72A83AC8000ACFA11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C731DF062A80FD94003A976A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C731DF0D2A80FD94003A976A;
+			remoteInfo = FastLaneSetup;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7C3670D32A83AC8000ACFA11 /* FastLaneSetupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastLaneSetupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3670D52A83AC8000ACFA11 /* FastLaneSetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneSetupTests.swift; sourceTree = "<group>"; };
 		C731DF0E2A80FD94003A976A /* FastLaneSetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastLaneSetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C731DF112A80FD94003A976A /* FastLaneSetupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneSetupApp.swift; sourceTree = "<group>"; };
 		C731DF132A80FD94003A976A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +35,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7C3670D02A83AC8000ACFA11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C731DF0B2A80FD94003A976A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +52,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C3670D42A83AC8000ACFA11 /* FastLaneSetupTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C3670D52A83AC8000ACFA11 /* FastLaneSetupTests.swift */,
+			);
+			path = FastLaneSetupTests;
+			sourceTree = "<group>";
+		};
 		C731DF052A80FD94003A976A = {
 			isa = PBXGroup;
 			children = (
 				C731DF102A80FD94003A976A /* FastLaneSetup */,
+				7C3670D42A83AC8000ACFA11 /* FastLaneSetupTests */,
 				C731DF0F2A80FD94003A976A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				C731DF0E2A80FD94003A976A /* FastLaneSetup.app */,
+				7C3670D32A83AC8000ACFA11 /* FastLaneSetupTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +100,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7C3670D22A83AC8000ACFA11 /* FastLaneSetupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3670DB2A83AC8000ACFA11 /* Build configuration list for PBXNativeTarget "FastLaneSetupTests" */;
+			buildPhases = (
+				7C3670CF2A83AC8000ACFA11 /* Sources */,
+				7C3670D02A83AC8000ACFA11 /* Frameworks */,
+				7C3670D12A83AC8000ACFA11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C3670D82A83AC8000ACFA11 /* PBXTargetDependency */,
+			);
+			name = FastLaneSetupTests;
+			productName = FastLaneSetupTests;
+			productReference = 7C3670D32A83AC8000ACFA11 /* FastLaneSetupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C731DF0D2A80FD94003A976A /* FastLaneSetup */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C731DF1C2A80FD96003A976A /* Build configuration list for PBXNativeTarget "FastLaneSetup" */;
@@ -97,6 +145,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					7C3670D22A83AC8000ACFA11 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = C731DF0D2A80FD94003A976A;
+					};
 					C731DF0D2A80FD94003A976A = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -116,11 +168,19 @@
 			projectRoot = "";
 			targets = (
 				C731DF0D2A80FD94003A976A /* FastLaneSetup */,
+				7C3670D22A83AC8000ACFA11 /* FastLaneSetupTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7C3670D12A83AC8000ACFA11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C731DF0C2A80FD94003A976A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +193,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7C3670CF2A83AC8000ACFA11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3670D62A83AC8000ACFA11 /* FastLaneSetupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C731DF0A2A80FD94003A976A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +212,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7C3670D82A83AC8000ACFA11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C731DF0D2A80FD94003A976A /* FastLaneSetup */;
+			targetProxy = 7C3670D72A83AC8000ACFA11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7C3670D92A83AC8000ACFA11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DD63847N69;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingtest.FastLaneSetupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastLaneSetup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FastLaneSetup";
+			};
+			name = Debug;
+		};
+		7C3670DA2A83AC8000ACFA11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DD63847N69;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingtest.FastLaneSetupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastLaneSetup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FastLaneSetup";
+			};
+			name = Release;
+		};
 		C731DF1A2A80FD96003A976A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +434,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7C3670DB2A83AC8000ACFA11 /* Build configuration list for PBXNativeTarget "FastLaneSetupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3670D92A83AC8000ACFA11 /* Debug */,
+				7C3670DA2A83AC8000ACFA11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C731DF092A80FD94003A976A /* Build configuration list for PBXProject "FastLaneSetup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
